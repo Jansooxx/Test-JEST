@@ -31,9 +31,9 @@ test("One euro should be 1.206 dollars", function(){
         
         const { fromYenToPound } = require('./app.js')
 
-        const pound = fromYenToPound(2);
+        const pound = fromYenToPound();
     //Valor directo esperado 
-        const expected =  2 * 0.8 ;
+        const expected =  pound * 0.8 ;
         
         // this is the comparison for the unit test
          expect(pound).toBe(expected); 

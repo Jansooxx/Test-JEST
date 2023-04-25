@@ -15,16 +15,16 @@ const fromEuroToDollar = function(valueInEuro){
     return valueInDollar;
 }
 
-const fromDollarToYen = function(dollars) {
+const fromDollarToYen = function(valueDollars) {
 // Regla de tres 
-    let valueYen = dollars * 127.9;
+    let valueYen = valueDollars * oneEuroIs.JPY;
     return valueYen;
   }
 
-  const fromYenToPound = function(Yen) {
+  const fromYenToPound = function(valueYen) {
 // Regla de tres 
 
-    let valuePound = Yen * 0.8;
+    let valuePound = valueYen * oneEuroIs.GBP;
     return valuePound;
   }
 
